@@ -11,6 +11,9 @@ goods = [
     {"name": "游艇", "price": 20},
     {"name": "美女", "price": 998},
 ]
+
+shopping_cart = []
+salary = 2000
 for i in enumerate(goods):
 	index = i[0]  # 序号
 	p_list = i[1]  # 商品清单
