@@ -17,8 +17,12 @@ while flag:
 	if index.isdigit():
 		unitPrice = goods[int(index)-1].get("price")
 		unitName = goods[int(index)-1].get("name")
-		total -= int(unitPrice)
-		print("您购买的\033[5;31;00m"+unitName+"\033[0m已经加入到购物车中，请您继续购买商品。")
+		if int(unitPrice)<= total:
+			print("您购买的\033[5;31;00m" + unitName + "\033[0m已经加入到购物车中，请您继续购买商品。")
+			total -= int(unitPrice)
+			print("剩余金额为: "+str(total))
+		else:
+			print("您购买的\033[5;31;00m" + unitName + "\033[0m 余额不足无法\033[5;31;00m"+unitPrice+"\033[0m 无法继续购买。")
 
 
 
