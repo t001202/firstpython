@@ -5,6 +5,10 @@ __author__ = "WangYx"
 #set 的方法功能 intersection isdisjoint   issubset
 se = set([11,22,33])
 be = set([11,44,55])
+ret = se.symmetric_difference(be)
+print(ret)
+net = se.union(be)
+print(net)
 
 # se.update(be)  #更新原有的集合
 # print(se)
@@ -14,4 +18,7 @@ be = set([11,44,55])
 # print(difference)
 # se.symmetric_difference_update(be)
 # print(se)
+
+for i in se:
+	print(i)
 
