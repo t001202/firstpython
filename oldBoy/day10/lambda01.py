@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 __author__ = "WangYx"
 """简单的函数  lambda"""
+
 def f1():
 	return 123
 
