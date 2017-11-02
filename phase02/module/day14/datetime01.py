@@ -3,9 +3,7 @@
 __author__ = "WangYx"
 
 import datetime
-import time
-
-today = datetime.datetime.date.today()
+today = datetime.datetime.today()
 print(today)
 # date = datetime.date()
 # print(date)
