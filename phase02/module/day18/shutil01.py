@@ -47,10 +47,10 @@ def unzip_dir(zipfilename, unzipdirname):
 			print("File %s is exist, are you sure to delet it first ? [Y/N]" % fullunzipdirname)
 			while 1:
 				inputStr = input()
-				if inputStr == "N" or inputStr == "n":
+				if inputStr.lower() == 'n':
 					return
 				else:
-					if inputStr == "Y" or inputStr == "y":
+					if inputStr.lower() == "y":
 						os.remove(fullunzipdirname)
 						print("Continue to unzip files ...")
 						break
