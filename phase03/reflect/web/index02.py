@@ -2,10 +2,11 @@
 # -*- coding: utf-8 -*-
 __author__ = "WangYx"
 
-import account as ac
+from phase03.reflect.day19 import commons as comm
+from phase03.reflect.web import account as ac
 import os
 
-ac_path = os.path.is('account')
+ac_path = os.path.isfile(ac)
 print(ac_path)
 
 new_module = input("请输入url: ")
